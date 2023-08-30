@@ -3,8 +3,9 @@ name: run
 on:
   # push:
   workflow_dispatch:
-  schedule:
-    - cron:  '0 */3 * * *'
+  # disabled cron because source csv file no longer updated
+  # schedule:
+  #   - cron:  '0 */3 * * *'
 
 jobs:
   run:
